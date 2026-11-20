@@ -75,3 +75,9 @@
 .hero-reference .hero-art:before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,#0b0f1433,transparent 60%);pointer-events:none}
 @media(max-width:800px){.hero-reference .hero-mascot-image{inset:-5%;opacity:.13}.hero-reference .hero-mascot-image img{object-position:65% center}}
 @media(max-width:500px){.hero-reference .hero-mascot-image{opacity:.11;inset:-8%}.hero-reference .hero-mascot-image img{object-position:64% center;filter:blur(3px)}}
+
+/* Correção do enquadramento: ocultar textos e navegação embutidos na captura */
+.hero-reference .hero-mascot-image{inset:0;overflow:hidden;opacity:.48;mask-image:linear-gradient(90deg,transparent 0%,#000 23%,#000 82%,transparent 100%);-webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 23%,#000 82%,transparent 100%);animation:none}
+.hero-reference .hero-mascot-image img{position:absolute;max-width:none;width:1050px;height:auto;left:50%;top:50%;transform:translate(-49%,-48%);object-fit:unset;object-position:initial;clip-path:inset(12% 5% 20% 48%);filter:none;mix-blend-mode:screen}
+@media(max-width:800px){.hero-reference .hero-mascot-image{opacity:.38}.hero-reference .hero-mascot-image img{width:980px;transform:translate(-49%,-48%)}}
+@media(max-width:500px){.hero-reference .hero-mascot-image{opacity:.3}.hero-reference .hero-mascot-image img{width:800px;transform:translate(-48%,-47%);clip-path:inset(13% 5% 20% 48%)}}
