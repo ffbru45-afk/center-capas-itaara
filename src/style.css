@@ -27,3 +27,15 @@
 @keyframes alien-ring{50%{transform:scale(1.1);opacity:.35}}
 @media(max-width:500px){.alien-saucer{width:173px;right:-8px;top:4px}.alien-face{width:106px;left:-7px;bottom:0}.alien-signal{left:87px;bottom:14px;padding:8px 10px}.alien-signal span{font-size:8px;letter-spacing:.6px}}
 @media(prefers-reduced-motion:reduce){.alien-ambient:before,.alien-saucer:after,.alien-face:before{animation:none}}
+
+/* Alien como foco da seção inicial: composição espacial minimalista */
+.hero-alien-focus .alien-face{width:245px;left:5%;bottom:6%;z-index:7;filter:drop-shadow(0 0 32px #4aff8e75)}
+.hero-alien-focus .alien-face:before{inset:-24px;border-color:#70ff9a66;box-shadow:0 0 55px #25ff6e2a}
+.hero-alien-focus .alien-saucer{width:230px;right:0;top:2%;filter:drop-shadow(0 0 35px #0cbcffb0)}
+.hero-alien-focus .alien-signal{bottom:4%;left:34%;z-index:8;background:#091a20ee}
+.hero-alien-focus .phone-front{transform:translate(100px,10px) rotate(11deg) scale(.93)}
+.hero-alien-focus .phone-back{transform:translate(-25px,25px) rotate(-17deg) scale(.87)}
+.hero-alien-focus:after{content:"";position:absolute;z-index:0;inset:8% 2%;background:radial-gradient(ellipse at 34% 75%,#28ef6228,transparent 47%),radial-gradient(ellipse at 75% 30%,#009dff1b,transparent 55%);pointer-events:none}
+.hero-alien-focus .floating-card{z-index:8}
+@media(max-width:800px){.hero-alien-focus .alien-face{width:220px;left:0}.hero-alien-focus .alien-saucer{width:210px}}
+@media(max-width:500px){.hero-alien-focus .alien-face{width:220px;left:-8%;bottom:2%}.hero-alien-focus .alien-saucer{width:210px;right:-5%;top:0}.hero-alien-focus .alien-signal{left:30%;bottom:0}.hero-alien-focus .phone-front{transform:translate(125px,8px) rotate(11deg) scale(.9)}.hero-alien-focus .phone-back{transform:translate(-8px,22px) rotate(-17deg) scale(.8)}}
