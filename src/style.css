@@ -39,3 +39,11 @@
 .hero-alien-focus .floating-card{z-index:8}
 @media(max-width:800px){.hero-alien-focus .alien-face{width:220px;left:0}.hero-alien-focus .alien-saucer{width:210px}}
 @media(max-width:500px){.hero-alien-focus .alien-face{width:220px;left:-8%;bottom:2%}.hero-alien-focus .alien-saucer{width:210px;right:-5%;top:0}.hero-alien-focus .alien-signal{left:30%;bottom:0}.hero-alien-focus .phone-front{transform:translate(125px,8px) rotate(11deg) scale(.9)}.hero-alien-focus .phone-back{transform:translate(-8px,22px) rotate(-17deg) scale(.8)}}
+
+/* Arte oficial do mascote: renderização preparada para imagem sem fundo */
+.hero-mascot-image{position:absolute;z-index:9;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none}
+.hero-mascot-image img{display:block;width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 12px 38px #00aaff45)}
+.hero-alien-focus .mascot-loaded .alien-face,.hero-alien-focus .mascot-loaded .alien-signal{display:none}
+.hero-alien-focus:has(.hero-mascot-image) .phone{opacity:.1}
+@media(max-width:500px){.hero-mascot-image img{width:110%;max-width:none}}
+@media(prefers-reduced-motion:reduce){.hero-mascot-image{transform:none!important}}
